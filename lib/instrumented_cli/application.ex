@@ -10,6 +10,7 @@ defmodule InstrumentedCLI.Application do
     children = [
       # Starts a worker by calling: InstrumentedCLI.Worker.start_link(arg)
       # {InstrumentedCLI.Worker, arg}
+      InstrumentedCLI.TraceFlusher
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

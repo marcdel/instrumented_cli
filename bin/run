@@ -1,0 +1,3 @@
+#!/bin/bash
+mix release --overwrite >/dev/null &&
+_build/dev/rel/instrumented_cli/bin/instrumented_cli eval 'InstrumentedCLI.command'
